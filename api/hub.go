@@ -6,7 +6,7 @@ type hubController struct{
 }
 
 type IHubController interface{
-	Activate(activation.RequestActivation) ResponseInstruction
+	Activate(activation.RequestActivation) activation.ResponceActivation
 }
 
 func HubController() IHubController{
