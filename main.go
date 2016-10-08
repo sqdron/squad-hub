@@ -6,8 +6,9 @@ import (
 )
 
 func main() {
+
 	var squad = squad.Client()
-	hub:= api.HubController()
+	hub:= api.HubController(squad.Options().ApplicationHub)
 	squad.Api.Route("activate").Action(hub.Activate)
 	squad.RunDetached()
 }
