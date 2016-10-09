@@ -1,2 +1,2 @@
 # squad-hub
-Squad Hub for instructing microservice infrastructure
+Squad Hub for microservice infrastructure coordination
