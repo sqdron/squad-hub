@@ -1,16 +1,11 @@
 package api
 
-import "github.com/sqdron/squad/activation"
-
 type hubController struct{
 	endpoint string
 }
 
-type IHubController interface{
-	Activate(activation.RequestActivation) activation.ServiceInfo
-}
 
-func HubController(endpoint string) IHubController{
+func HubController(endpoint string) *hubController{
 	return &hubController{endpoint : endpoint}
 }
 
